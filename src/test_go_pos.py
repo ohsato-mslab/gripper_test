@@ -43,7 +43,7 @@ try:
         GPIO.output(13,GPIO.LOW)
         GPIO.output(10,GPIO.HIGH)
         GPIO.output(11,GPIO.LOW)
-        rospy.sleep(0.15)#t1待つ
+        rospy.sleep(0.1)#t1待つ
         GPIO.output(27,GPIO.HIGH)#実行命令
         print "send Position10. 3 seconds sleep.."
         GPIO.output(27,GPIO.LOW)
@@ -54,7 +54,7 @@ try:
         GPIO.output(13,GPIO.HIGH)
         GPIO.output(10,GPIO.LOW)
         GPIO.output(11,GPIO.LOW)#すべてのPOSビットを0に
-        rospy.sleep(0.015)#t1待つ
+        rospy.sleep(0.1)#t1待つ
         GPIO.output(27,GPIO.HIGH)#実行命令
         print "send Position20. 3 seconds sleep.."
         GPIO.output(27,GPIO.LOW)
@@ -65,7 +65,7 @@ try:
         GPIO.output(13,GPIO.HIGH)
         GPIO.output(10,GPIO.HIGH)
         GPIO.output(11,GPIO.HIGH)#すべてのPOSビットを0に
-        rospy.sleep(0.015)#t1待つ
+        rospy.sleep(0.1)#t1待つ
         GPIO.output(27,GPIO.HIGH)#実行命令
         print "send Position32. 10 seconds sleep.."
         GPIO.output(27,GPIO.LOW)
