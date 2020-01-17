@@ -35,6 +35,7 @@ try:
         print(now)
         GPIO.output(27,GPIO.HIGH)#実行命令
         print "send Position0. 3 seconds sleep.."
+        rospy.sleep(3)
         GPIO.output(27,GPIO.LOW)
         rospy.sleep(3)
         #ここから位置決め　10番
@@ -46,6 +47,7 @@ try:
         rospy.sleep(0.1)#t1待つ
         GPIO.output(27,GPIO.HIGH)#実行命令
         print "send Position10. 3 seconds sleep.."
+        rospy.sleep(3)
         GPIO.output(27,GPIO.LOW)
         rospy.sleep(3)
         #ここから位置決め　20番
@@ -57,6 +59,7 @@ try:
         rospy.sleep(0.1)#t1待つ
         GPIO.output(27,GPIO.HIGH)#実行命令
         print "send Position20. 3 seconds sleep.."
+        rospy.sleep(3)
         GPIO.output(27,GPIO.LOW)
         rospy.sleep(3)
         #ここから位置決め　31番
@@ -68,6 +71,7 @@ try:
         rospy.sleep(0.1)#t1待つ
         GPIO.output(27,GPIO.HIGH)#実行命令
         print "send Position32. 10 seconds sleep.."
+        rospy.sleep(3)
         GPIO.output(27,GPIO.LOW)
         rospy.sleep(10)
 
